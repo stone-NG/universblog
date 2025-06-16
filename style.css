@@ -1,0 +1,369 @@
+/* Global Styles - Garde le même code global que tu as déjà */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: #eeebeb;
+}
+
+/* Navbar */
+.navbar {
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(0, 140, 255);
+    flex-wrap: wrap;
+}
+
+.navbar .logo h1 {
+    color: white;
+    cursor: pointer;
+}
+
+.navbar .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .menu li {
+   
+    list-style: none;
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 20px;
+    color: white;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 15px;
+     padding: 20px 5px;
+    font-weight: bold;
+}
+
+.navbar .menu li a:hover {
+    background: white;
+    color: rgb(0, 140, 255);
+    
+}
+
+/* Main */
+.main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main .content .card {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#Home {
+    margin-right: -50px;
+}
+
+.main .content {
+    margin-right: -10px;
+    width: 100%;
+}
+
+.card .notif {
+    position: relative;
+    background-color: #0288d1;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    max-width: 90%;
+    word-break: break-word;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.left h1 {
+    color: rgb(0, 140, 255);
+    font-size: 22px;
+}
+
+.card .date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #0288d1;
+    color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 12px;
+    padding: 6px 0;
+    line-height: 1.2;
+    font-weight: bold;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #0288d1;
+    color: #0288d1;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.card .left a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.card .left button:hover {
+    cursor: pointer;
+    background: #0288d1;
+    color: white;
+}
+
+.card .left {
+    flex: 1 1 60%;
+    text-align: center;
+}
+
+.card .right {
+    flex: 1 1 299px;
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+}
+
+.card .right img {
+    cursor: pointer;
+    height: auto;
+    width: 100%;
+    max-width: 299px;
+    margin-bottom: 20px;
+}
+
+.card .right img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* About Section */
+.About {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.search,
+.form,
+.icon,
+.link {
+    background-color: #fff;
+}
+
+.form {
+    padding: 10px;
+}
+
+.search {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px;
+}
+
+.About .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.About .link .profil {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.About .link .profil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.About .link h3 {
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+.About input {
+    width: 100%;
+    max-width: 240px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid #0288d1;
+    border-radius: 5px 0 0 5px;
+}
+
+.About .loupe {
+    cursor: pointer;
+    background-color: #0288d1;
+    height: 35px;
+    border: none;
+    padding: 4px;
+}
+
+.About .loupe img {
+    width: 50%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 25px;
+    gap: 20px;
+}
+
+.icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 950px) {
+    .main .content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #home {
+        margin: 0;
+    }
+
+    .navbar .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       
+    }
+
+    .navbar .menu li {
+        margin: 10px 0;
+        width: 100%;
+      
+    }
+
+    .main .content .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card .left,
+    .card .right {
+        width: 100%;
+    }
+
+    .card button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #Home {
+        margin-right: 0;
+    }
+    .navbar{
+        position: static;
+        padding-top:10px ;
+        padding: 10px 0;
+    }
+
+    .navbar .menu li a {
+        font-size: 14px;
+        width: 100%;
+          margin: 0;
+    }
+
+    .card .notif {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    .card .date {
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .About .link h3 {
+        font-size: 16px;
+    }
+
+    .About input {
+        width: 100%;
+    }
+
+    .About .loupe img {
+        width: 50%;
+    }
+}

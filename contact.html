@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>UniversBlog</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <h1>📩 Contactez-nous</h1>
+
+        <h2>✉️ Besoin d'informations ou envie d'échanger ?</h2>
+        <p>Nous sommes ravis de discuter avec vous ! Que ce soit pour des questions, des suggestions ou simplement pour
+            dire bonjour, n'hésitez pas à nous contacter.</p>
+
+        <h2>📍 Nos coordonnées</h2>
+        <div class="infos">
+            📧 Email : contact@exemple.com <br>
+            📞 Téléphone : +33 1 23 45 67 89 <br>
+            🌍 Adresse : 123 Rue de l’Exemple, 75000 Paris
+        </div>
+
+        <h2>💬 Formulaire de contact</h2>
+        <p>Vous pouvez aussi nous écrire directement ici :</p>
+
+        <form action="send-message.php" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
