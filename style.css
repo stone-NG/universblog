@@ -228,6 +228,9 @@ body {
     text-align: center;
     font-size: 22px;
 }
+h2{
+    color:rgb(0, 140, 255);
+}
 
 .About input {
     width: 100%;
